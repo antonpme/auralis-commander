@@ -322,7 +322,7 @@ server.tool('system_info', 'System stats: CPU, memory, disks, uptime.', {}, asyn
 // ============================================================================
 // Tool: process_interactive
 // ============================================================================
-server.tool('process_interactive', 'Interactive process management: start, write, read, kill, list sessions.', {
+server.tool('process_interactive', 'Interactive process management: start, write, read, kill, list sessions. For Python REPL use: python -u -i (unbuffered interactive mode).', {
     action: z.enum(['start', 'write', 'read', 'kill', 'list']).describe('Action to perform'),
     command: z.string().optional().describe('Command to start (for start action)'),
     cwd: z.string().optional().describe('Working directory (for start action)'),

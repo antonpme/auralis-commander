@@ -432,7 +432,7 @@ server.tool(
 // ============================================================================
 server.tool(
   'process_interactive',
-  'Interactive process management: start, write, read, kill, list sessions.',
+  'Interactive process management: start, write, read, kill, list sessions. For Python REPL use: python -u -i (unbuffered interactive mode).',
   {
     action: z.enum(['start', 'write', 'read', 'kill', 'list']).describe('Action to perform'),
     command: z.string().optional().describe('Command to start (for start action)'),

@@ -146,7 +146,7 @@ process_interactive { action: "kill", session_id: "a1b2c3" }
 ### Interactive Python REPL
 
 ```javascript
-process_interactive { action: "start", command: "python" }
+process_interactive { action: "start", command: "python -u -i" }  // -u: unbuffered, -i: interactive
 // → { session_id: "x1y2z3", output: "Python 3.12.0\n>>>", is_running: true }
 
 process_interactive { action: "write", session_id: "x1y2z3", input: "2 + 2\n" }
