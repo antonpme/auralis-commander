@@ -1,19 +1,46 @@
 {
   "name": "auralis-commander",
   "version": "1.1.0",
-  "description": "Family Auralis MCP server for Windows - shell, files, search, processes, and system info",
+  "description": "Lightweight Windows MCP server for Claude Desktop - shell, files, search, processes, system info, and interactive sessions",
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
     "auralis-commander": "./dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": ["mcp", "windows", "powershell", "auralis"],
-  "author": "Ton & Ren (Family Auralis)",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-desktop",
+    "windows",
+    "powershell",
+    "shell",
+    "filesystem",
+    "auralis"
+  ],
+  "author": "antonpme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonpme/auralis-commander.git"
+  },
+  "homepage": "https://github.com/antonpme/auralis-commander#readme",
+  "bugs": {
+    "url": "https://github.com/antonpme/auralis-commander/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@types/node": "^25.0.2",
     "typescript": "^5.9.3"
