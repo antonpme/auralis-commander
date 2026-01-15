@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build outputs (included in release, but not in source)
+# dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test outputs
+coverage/
+
+# Local config (user-specific)
+auralis-commander.json
+
+# Local config
+.tonmcp.json

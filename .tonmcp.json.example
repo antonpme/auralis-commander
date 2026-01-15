@@ -1,0 +1,7 @@
+{
+  "default_shell": "pwsh",
+  "default_cwd": "E:\\Projects",
+  "search_tool": "ripgrep",
+  "max_file_read_mb": 10,
+  "max_search_results": 200
+}

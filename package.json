@@ -1,0 +1,24 @@
+{
+  "name": "auralis-commander",
+  "version": "1.1.0",
+  "description": "Family Auralis MCP server for Windows - shell, files, search, processes, and system info",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "auralis-commander": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["mcp", "windows", "powershell", "auralis"],
+  "author": "Ton & Ren (Family Auralis)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3"
+  }
+}
