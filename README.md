@@ -58,19 +58,19 @@ Optimized for PowerShell and Windows workflows. No WSL required, no Unix assumpt
 
 ## Installation
 
-### Option 1: Clone and Build
+### Option 1: npm (recommended)
+
+```bash
+npm install -g auralis-commander
+```
+
+### Option 2: Clone and Build
 
 ```bash
 git clone https://github.com/antonpme/auralis-commander
 cd auralis-commander
 npm install
 npm run build
-```
-
-### Option 2: npm (coming soon)
-
-```bash
-npm install -g auralis-commander
 ```
 
 ### Claude Desktop Configuration
